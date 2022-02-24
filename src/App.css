@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+.App #navbar{
+  background-color: transparent;
+  color: #000000;
+  box-shadow: none;
+  border-bottom: 0.6px solid #d3d3d3;
+  position: static;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App img{
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App #home{
+  margin: 80px 5%;
+  font-size: x-large;
+}
+#home h1{
+  margin: 0px 0px 5px;
+}
+#home .bold_text{
+  font-weight: 600;
+}
+#home .head{
+  font-size: 0.92rem;
+}
+#home .description{
+  margin: 10px 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#home button{
+  padding: 10px 10%;
+  border: 1px solid #ff914d;
+  margin: 15px 0px 20px;
+  color: #ff914d;
+  font-weight: bold;
+  text-transform: none;
+  border-radius: 10px;
+}
+#home .left_button,#navbar .left_button{
+  background-color: #ff914d;
+  color: #ffffff;
+  margin-right: 10px;
+}
+#navbar .left_button:hover{
+  color: #000000;
+  background-color: #ff914d;
+}
+#navbar .menu_items{
+  color: #000000;
+  font-weight: bold;
+  margin: 0px 8px;
+  font-size: 0.96rem;
+}
+#navbar .menu_items:hover{
+  cursor: pointer;
+  color: #ff914d;
+}
+#navbar .MuiContainer-root{
+  padding: 0px;
+}
+#navbar .logo{
+  width: 3.7%;
+  margin: 0px 10px;
+}
+#navbar .title{
+  width: 4.2%;
+  margin-right: 5%;
+}
+.orange_color{
+  color: #ff914d;
+}
+#navbar .logo_mob,#navbar .title_mob{
+  visibility: hidden;
+  width: 0px;
+}
+@media (max-width: 1200px) {
+  .App #home img{
+    width: 80%;
+    margin: 40px 10% 0px;
+  }
+  .App #home,#home .description{
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  #navbar .menu_items{
+    font-size: 0.83rem;
+  }
+  #navbar #menu{
+    position: relative;
+    left: -8%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 900px){
+  #navbar .logo,#navbar .title{
+    visibility: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  #navbar .collapse_icon{
+    position: absolute;
+    left: 10px;
+    top: 4px;
+  }
+  #navbar .logo_mob,#navbar .title_mob{
+    visibility:visible;
+    width: 8%;
+    position: absolute;
+    left: 12%;
+  }
+  .App #navbar .title_mob{
+    left: 24%;
   }
 }
